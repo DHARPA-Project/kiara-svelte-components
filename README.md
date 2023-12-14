@@ -15,13 +15,23 @@ Everything inside `src/lib` is part of the component library, everything inside 
 
 ## Testing
 
-The project is set up to enable "unit" testing via [vitest](https://vitest.dev/), and browser/UI testing via [playwright](https://playwright.dev/). Run the tests with :
+The project is set up to enable "unit" testing via [vitest](https://vitest.dev/), and browser/UI testing via [playwright](https://playwright.dev/). Run the tests with:
 
 ```bash
 npm run test  # all the tests
 npm run test:integration  # just the UI tests
 npm run test:unit  # just the unit tests
 ```
+
+There's also various linters, formatters and typescript typechecking configured. Run these:
+
+```bash
+npm run format  # fix formatting using prettier
+npm run lint  # check for lint errors using eslint
+npm run check  # svelte and typescript checks
+```
+
+All of these things will be run in [GitHub actions](https://github.com/DHARPA-Project/kiara-svelte-components/actions) when code is pushed.
 
 ## Building
 
