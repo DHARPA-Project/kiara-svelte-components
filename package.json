@@ -1,6 +1,21 @@
 {
-	"name": "kiara-svelte-components",
+	"name": "@dharpa-project/kiara-svelte-components",
 	"version": "0.0.1",
+	"private": true,
+	"homepage": "https://github.com/DHARPA-Project/kiara-svelte-components",
+	"bugs": {
+		"url": "https://github.com/DHARPA-Project/kiara-svelte-components/issues"
+	},
+	"contributors": [
+		{
+			"name": "Caro Appleby",
+			"email": "hi@caro.fyi"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DHARPA-Project/kiara-svelte-components.git"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
