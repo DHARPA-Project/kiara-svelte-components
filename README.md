@@ -4,14 +4,18 @@ This repository contains components to display data from `kiara`, and to help in
 
 ## Developing
 
-Clone this repository using git. Install operating system dependenices [NodeJS](https://nodejs.org/) and npm, then.
+Clone this repository using git. Install operating system dependenices [NodeJS](https://nodejs.org/) and npm, then:
 
 ```bash
 npm install  # install project dependencies, first time only
 npm run dev
 ```
 
+Alternatively, if you have the [`just`](https://github.com/casey/just) task runner installed, run `just setup`.
+
 Everything inside `src/lib` is part of the component library, everything inside `src/routes` is the showcase or preview app.
+
+Optionally (but please do if you can) there's a [pre-commit](https://pre-commit.com/) hook to check formatting before each commit. You'll need [pre-commit installed globally](https://pre-commit.com/#installation) on your machine, then run `pre-commit install` to enable the hook.
 
 ## Testing
 
