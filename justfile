@@ -12,6 +12,7 @@ setup:
     npm --version
     npm install
     npx playwright install
+    pre-commit install
 
 # Update all project dependencies
 update-deps:
