@@ -3,6 +3,9 @@
 	import sanitizeHtml from 'sanitize-html';
 	import { marked } from 'marked';
 
+	/**
+	 * The Documentation from a kiara item, an object with keys description (summarising the item) and doc (detailed documentation in markdown)
+	 */
 	export let doc: Documentation;
 	/**
 	 * Whether to show the full markdown documentation of the item, or just the summary

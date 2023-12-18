@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { Doc } from '../index.js';
+import { Doc } from '../../index.js';
 import { render, screen } from '@testing-library/svelte';
 
 describe('Doc', () => {

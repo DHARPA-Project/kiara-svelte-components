@@ -12,5 +12,8 @@ export default defineConfig({
 			reporter: ['text', 'html'],
 			include: ['src/lib/**']
 		}
+	},
+	build: {
+		target: 'esnext'
 	}
 });
