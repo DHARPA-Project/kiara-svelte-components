@@ -1,8 +1,7 @@
 {
-	"name": "@dharpa-project/kiara-svelte-components",
+	"name": "@dharpa/kiara-svelte-components",
 	"version": "0.0.1",
 	"license": "MPL-2.0",
-	"private": true,
 	"homepage": "https://github.com/DHARPA-Project/kiara-svelte-components",
 	"bugs": {
 		"url": "https://github.com/DHARPA-Project/kiara-svelte-components/issues"
@@ -44,6 +43,7 @@
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
+		"!dist/**/*.stories.*",
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
