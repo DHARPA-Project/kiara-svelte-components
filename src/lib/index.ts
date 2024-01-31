@@ -2,3 +2,8 @@ export { default as Doc } from './components/display/Doc.svelte';
 export { default as GitHubLink } from './components/display/GitHubLink.svelte';
 export { default as Button } from './components/base/Button.svelte';
 export { default as Code } from './components/display/Code.svelte';
+export { default as Foldable } from './components/display/Foldable.svelte';
+export { default as InputsOutputs } from './components/display/InputsOutputs.svelte';
+export { default as ModuleConfig } from './components/display/ModuleConfig.svelte';
+export { default as Authors } from './components/display/Authors.svelte';
+export { default as ItemMetadata } from './components/display/ItemMetadata.svelte';

@@ -15,7 +15,7 @@
 </script>
 
 <Template let:args>
-	<Foldable {...args}>
+	<Foldable {...args} class="bg-gray-50 shadow-sm">
 		<p>{content}</p>
 	</Foldable>
 </Template>

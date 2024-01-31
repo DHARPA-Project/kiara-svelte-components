@@ -47,6 +47,6 @@
 	}}
 	args={{
 		href: 'https://github.com/DHARPA-project/kiara-svelte-components',
-		classes: 'text-purple-500 hover:fill-red-500 fill-purple-500'
+		class: 'text-violet-500 hover:fill-red-500 fill-purple-500'
 	}}
 />

@@ -28,8 +28,8 @@
 </section>
 
 <style lang="postcss">
-	section[data-accordion] {
-		@apply w-full flex items-center space-x-4 py-2 px-4;
+	section {
+		@apply w-full flex items-center space-x-4 py-2 px-4 rounded-md;
 	}
 
 	div[data-accordion-item] {
