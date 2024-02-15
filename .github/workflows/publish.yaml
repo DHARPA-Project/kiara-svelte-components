@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies from lockfile
-        run: npm ci
+        run: npm install --legacy-peer-deps # This needs fixing! once sveltekit v2 and storybook work together
       - run: npm run build
       - uses: JS-DevTools/npm-publish@v3
         id: publish
