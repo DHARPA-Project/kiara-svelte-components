@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies from lockfile
-        run: npm ci
+        run: npm install --legacy-peer-deps # This needs fixing! once sveltekit v2 and storybook work together
       - name: Run linter (eslint)
         run: npm run lint
       - name: Run Svelte and Typescript checks

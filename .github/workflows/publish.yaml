@@ -1,0 +1,24 @@
+name: Publish Package to npmjs
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies from lockfile
+        run: npm install --legacy-peer-deps # This needs fixing! once sveltekit v2 and storybook work together
+      - run: npm run build
+      - uses: JS-DevTools/npm-publish@v3
+        id: publish
+        with:
+          access: public
+          token: ${{ secrets.NPM_TOKEN }}
+      - name: Assert actually published an updated package
+        if: ${{ ! steps.publish.outputs.type }}
+        run: echo "💥 Package wasn't updated on npm! did you forget to update the version number in your package.json? 💥" && exit 1

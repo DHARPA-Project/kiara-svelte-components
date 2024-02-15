@@ -55,7 +55,7 @@ Preview the production build with `npm run preview`. The showcase app can be dep
 
 ## Publishing
 
-Publishing the package to a package registry is not yet implemented.
+The package is published to `npm`, in the `dharpa` org account. Install it with `npm i @dharpa/kiara-svelte-components`. To publish a new version, create a release on GitHub and write some release notes. Make sure the version number in `package.json` is different to the exising published version (the GitHub Action will fail if you forgot to do this).
 
 To use the package in another JavaScript project with Svelte support:
 

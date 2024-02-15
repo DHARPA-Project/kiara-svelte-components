@@ -10,7 +10,7 @@ dev:
 setup:
     node --version
     npm --version
-    npm install
+    npm install --legacy-peer-deps
     npx playwright install
     pre-commit install
 
